@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Moving On Up - Representative Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Moving On Up</h2>
+    <form id="loginForm" novalidate>
+      <div class="form-group">
+        <label for="firstName">Moving Rep's First Name:</label>
+        <input type="text" id="firstName" name="firstName">
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Moving Rep's Last Name:</label>
+        <input type="text" id="lastName" name="lastName">
+      </div>
+
+      <div class="form-group password-group">
+        <label for="password">Moving Rep's Password:</label>
+        <div class="password-wrapper">
+          <input type="password" id="password" name="password">
+          <span id="togglePassword" class="eye-icon">👁️</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="repId">Moving Rep's ID #:</label>
+        <input type="text" id="repId" name="repId">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Moving Rep's Phone # (with extension):</label>
+        <input type="text" id="phone" name="phone" placeholder="111-111-1111 ext 123">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Moving Rep's Email:</label>
+        <input type="text" id="email" name="email">
+      </div>
+
+      <div class="form-group checkbox-group">
+        <input type="checkbox" id="emailConfirm" name="emailConfirm">
+        <label for="emailConfirm">Check the box to request an Email Confirmation</label>
+      </div>
+
+      <div class="form-group">
+        <label for="transaction">Select a Transaction:</label>
+        <select id="transaction" name="transaction">
+          <option value="Search A Moving Representative's Accounts">Search A Moving Representative's Accounts</option>
+          <option value="Book a Client's Moving Event">Book a Client's Moving Event</option>
+          <option value="Cancel A Client's Moving Event">Cancel A Client's Moving Event</option>
+          <option value="Request Moving Services">Request Moving Services</option>
+          <option value="Request Additional Moving Services">Request Additional Moving Services</option>
+          <option value="Create A New Client Account">Create A New Client Account</option>
+        </select>
+      </div>
+
+      <div class="button-group">
+        <input type="submit" id="submitBtn" value="Submit">
+        <input type="reset" id="resetBtn" value="Reset">
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
